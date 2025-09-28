@@ -3,7 +3,9 @@ That runs it on localhost:8000 by default
 
 when cloning this repo for a new project, run 'composer install' as the first command via command line to get vendor files installed and artisan commands working
 
-run a migration with php artisan migrate
+run a migration with php artisan migrate -> this will prompt to create db and will create basic tables (whatever migrations are present by default)
+
+will need to copy over env.example to new .env file and run php artian key:generate to create new APP_KEY (for encryption) in .env file
 
 mysql depends on laragon running -> go to http://localhost/phpmyadmin then to pawswap db to access db
 
